@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Instrutor de Voo</title>
+</head>
+<body>
+  <div class="CFI-info-page">
+    <div class="header">
+      <img src="logo.png" alt="Logo">
+      <span class="title">Ficha do Instrutor de Voo</span>
+    </div>
+
+    <form action="" method="post">
+
+      <img src="avatar.png" alt="" class="avatar">
+      <div class="line1">
+        <p>Dados de cadastro</p>
+      </div>
+
+      <div class="topLines">
+        <div class="line2">
+          <label for="fullName" id="fullName">Nome completo</label>
+          <input type="text" name="fullName" id="fullNameInput" value={{fullname}}>
+        </div>
+        <div class="line3">
+          <label for="codeName" id="codeName">Nome de pista</label>
+          <input type="text" name="codeName" id="codeNameInput" value="{{codename}}">
+          <label for="canac" id="canac">Código ANAC</label>
+          <input type="text" name="canac" id="canacInput" value="{{canac}}">
+        </div>
+        <div class="line4">
+          <label for="address" id="address">Endereço</label>
+          <input type="text" name="address" id="addressInput" value="{{address}}">
+          <label for="neighborhood" id="neighborhood">Bairro</label>
+          <input type="text" name="neighborhood" id="neighborhoodInput" value="{{neighborhood}}">
+        </div>
+        <div class="line5">
+          <label for="city" id="city">Cidade</label>
+          <input type="text" name="city" id="cityInput" value="{{city}}">
+          <label for="cep" id="cep">CEP</label>
+          <input type="text" name="uf" id="cepInput" value="{{cep}}">
+          <label for="uf" id="uf">UF</label>
+          <input type="text" name="ufDate" id="ufInput" value="{{state}}">
+        </div>
+      </div>
+
+      <div class="bottomLines">
+        <div class="line6">
+          <label for="cellphone" id="cellphone">Celular</label>
+          <input type="text" name="city" id="cellphoneInput" value="{{cellphone}}">
+          <label for="email" id="email">E-Mail</label>
+          <input type="text" name="email" id="emailInput" value="{{email}}">
+          <label for="rg" id="rg">RG</label>
+          <input type="text" name="rg" id="rgInput" value="{{rg}}">
+        </div>
+        <div class="line7">
+          <label for="cpf" id="cpf">CPF</label>
+          <input type="text" name="cpf" id="cpfInput" value="{{cpf}}">
+          <label for="birthDate" id="birthDate">Nascimento</label>
+          <input type="text" name="birthDate" id="birthDateInput" value="{{birthDate}}">
+          <label for="hiringDate" id="hiringDate">Admissão</label>
+          <input type="text" name="hiringDate" id="hiringDateInput" value="{{hiringDate}}">
+        </div>
+        <div class="line8">
+          <label for="bloodType" id="bloodType">Tipo sanguíneo e RH</label>
+          <input type="text" name="bloodType" id="bloodTypeInput" value="{{bloodtype}}">
+          <label for="emergencyContact" id="emergencyContact">Contato de Emergência</label>
+          <input type="text" name="emergencyContact" id="emergencyContactInput" value="{{emergencyContact}}">
+        </div>
+        <div class="line9">
+          <p>Adaptação de equipamentos</p>
+        </div>
+        <div class="line10">
+          <li id="c152">
+            <p>C152</p>
+            <span>
+              <input type="checkbox" name="ma" id="mac152">
+              <label for="mac152">Manobra alta</label>
+            </span>
+            <span>
+              <input type="checkbox" name="mb" id="mbc152">
+              <label for="mbc152">Manobra baixa</label>
+            </span>
+            <span>
+              <input type="checkbox" name="nav" id="navc152">
+              <label for="navc152">Navegação</label>
+            </span>
+            <span>
+              <input type="checkbox" name="not" id="notc152">
+              <label for="notc152">Noturno</label>
+            </span>
+          </li>
+          <li id="p56">
+            <p>P56B/C</p>
+            <span>
+              <input type="checkbox" name="ma" id="map56">
+              <label for="map56">Manobra alta</label>
+            </span>
+            <span>
+              <input type="checkbox" name="mb" id="mbc152">
+              <label for="mbp56">Manobra baixa</label>
+            </span>
+            <span>
+              <input type="checkbox" name="nav" id="navc152">
+              <label for="navp56">Navegação</label>
+            </span>
+            <span>
+              <input type="checkbox" name="not" id="notc152">
+              <label for="notp56">Noturno</label>
+            </span>
+          </li>
+          <li id="cherokee">
+            <p>Cherokee</p>
+            <span>
+              <input type="checkbox" name="ma" id="macherokee">
+              <label for="macherokee">Manobra alta</label>
+            </span>
+            <span>
+              <input type="checkbox" name="mb" id="mbcherokee">
+              <label for="mbcherokee">Manobra baixa</label>
+            </span>
+            <span>
+              <input type="checkbox" name="nav" id="navcherokee">
+              <label for="navcherokee">Navegação</label>
+            </span>
+            <span>
+              <input type="checkbox" name="not" id="notcherokee">
+              <label for="notcherokee">Noturno</label>
+            </span>
+          </li>
+          <li id="tupi">
+            <p>Tupi</p>
+            <span>
+              <input type="checkbox" name="ma" id="matupi">
+              <label for="matupi">Manobra alta</label>
+            </span>
+            <span>
+              <input type="checkbox" name="mb" id="mbtupi">
+              <label for="mbtupi">Manobra baixa</label>
+            </span>
+            <span>
+              <input type="checkbox" name="nav" id="navtupi">
+              <label for="navtupi">Navegação</label>
+            </span>
+            <span>
+              <input type="checkbox" name="not" id="nottupi">
+              <label for="nottupi">Noturno</label>
+            </span>
+          </li>
+          <li id="seneca">
+            <p>Seneca</p>
+            <span>
+              <input type="checkbox" name="ma" id="maseneca">
+              <label for="maseneca">Manobra alta</label>
+            </span>
+            <span>
+              <input type="checkbox" name="mb" id="mbseneca">
+              <label for="mbseneca">Manobra baixa</label>
+            </span>
+            <span>
+              <input type="checkbox" name="nav" id="navseneca">
+              <label for="navseneca">Navegação</label>
+            </span>
+            <span>
+              <input type="checkbox" name="not" id="notseneca">
+              <label for="notseneca">Noturno</label>
+            </span>
+          </li>
+        </div>
+        <div class="line11">
+          <li id="ifrInstructor">
+            <div class="ifr-class">
+              Instrução IFR
+              <input type="checkbox" name="sim" id="sim">
+              <label for="sim">Simulador</label>
+              <input type="checkbox" name="c152" id="c152">
+              <label for="sim">C152</label>
+              <input type="checkbox" name="tupi" id="tupi">
+              <label for="tupi">Tupi</label>
+              <input type="checkbox" name="seneca" id="seneca">
+              <label for="senec">Seneca</label>
+            </div>
+          </li>
+        </div>
+        <div class="line12">
+          <p>Habilitações</p>
+        </div>
+        <div class="line13">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </div>
+        <div class="line14">
+          <li>1</li>
+          <li>2</li>
+        </div>
+        <div class="line15">
+          <p>Experiência</p>
+        </div>
+        <div class="line16">
+          <li>1</li>
+          <li>2</li>
+        </div>
+        <div class="line17">
+          <p>Ocorrências</p>
+        </div>
+        <div class="line18">
+          <input type="text" name="" id="">
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</body>
+</html>
