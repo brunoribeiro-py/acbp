@@ -4,9 +4,9 @@ import { compile } from "handlebars";
 import { join } from "path";
 import { S3 } from "aws-sdk";
 import { document } from "../utils/dynamodbClient";
-import Chromium from "chrome-aws-lambda-esbuild";
 import dayjs from "dayjs";
 import { deburr, replace, startCase, toUpper } from "lodash";
+import { chromium } from "playwright-core";
 
 interface IEmployeeData {
   rawfullname: string;
@@ -195,12 +195,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
   const html = template(data);
 
   // Convert HTML to PDF
-  const browser = await Chromium.puppeteer.launch({
-    headless: true,
-    args: Chromium.args,
-    defaultViewport: Chromium.defaultViewport,
-    executablePath: await Chromium.executablePath,
-  })
+  const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.setContent(html);
   const pdf = await page.pdf({
